@@ -32,11 +32,54 @@ ol, ul {
   display: none;
 }
 
+/*Стандартные стили*/
+.owl-nav div {
+  text-indent: -9999px;
+  height: 54px;
+  width: 28px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  display: block;
+  z-index: 10;
+}
+
+.owl-nav div:hover {
+  opacity: 0.6;
+}
+
+.owl-nav .owl-prev {
+  left: -100px;
+  background-image: url(../img/icon/aw-left.png);
+}
+
+.owl-nav .owl-next {
+  right: -100px;
+  background-image: url(../img/icon/aw-right.png);
+}
+
+.p-title {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "ProximaNovaBold", sans-serif;
+  font-size: 30px;
+  letter-spacing: 0.5em;
+  display: inline-block;
+}
+
+.p-description p {
+  line-height: 25px;
+  color: #ccc;
+  letter-spacing: 0.05em;
+}
+
 /*Внешние блоки*/
 body {
-  font-size: 16px;
+  font-size: 15px;
   min-width: 320px;
   position: relative;
+  background-color: #000;
   line-height: 1.25;
   font-family: "ProximaNovaRegular", sans-serif;
   overflow-x: hidden;
@@ -62,41 +105,100 @@ body {
   padding-top: 37px;
 }
 
+.page__p-title {
+  text-align: center;
+  padding-bottom: 45px;
+  padding-top: 45px;
+  position: relative;
+  z-index: 3;
+}
+
+.page__p-description {
+  position: relative;
+  z-index: 3;
+}
+
+.page__p-description-ots {
+  padding: 0 270px;
+}
+
+.page__p-aboutSlider {
+  position: relative;
+  z-index: 3;
+  padding: 68px 100px;
+}
+
 .page__section-top {
   position: relative;
 }
 
 .page__section-top::after {
   content: '';
-  height: 300px;
+  height: 140px;
   z-index: 1;
   left: 0;
   right: 0;
-  top: 0;
+  bottom: 0;
   display: block;
   width: auto;
   position: absolute;
-  background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, black 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, rgba(255, 255, 255, 0)));
-  background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, black 100%);
-  background: -o-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, black 100%);
-  background: -ms-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, black 100%);
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, black 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#FFFFFF',GradientType=0 );
+  background: -webkit-linear-gradient(top, transparent 0%, black 100%);
+  background: linear-gradient(to bottom, transparent 0%, black 100%);
 }
 
 .page__section-img {
   display: block;
   width: 100%;
   height: auto;
-  -webkit-filter: contrast(1.1);
-  filter: contrast(1.1);
 }
 
 .page__section-absolute {
   left: 0;
   right: 0;
   position: absolute;
+  z-index: 2;
+}
+
+.page__section-about {
+  padding-top: 135px;
+  position: relative;
+}
+
+.page__section-gradbg {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  right: 100px;
+  width: auto;
+}
+
+.page__section-gradbg-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.page__section-gradbg::after, .page__section-gradbg:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 1;
+  background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.6) 0%, black 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(0, 0, 0, 0.6)), color-stop(100%, black));
+  background: -o-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.6) 0%, black 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.6) 0%, black 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 );
+}
+
+.page__section-full {
+  overflow-x: hidden;
+  position: relative;
+  z-index: 3;
+  padding: 68px 0;
 }
 
 /*Компоненты*/
@@ -133,8 +235,9 @@ body {
 }
 
 .h-nav__link:hover, .h-nav__link:focus, .h-nav__link:active {
-  text-decoration: underline;
+  text-decoration: none;
   color: #fff;
+  opacity: 0.6;
 }
 
 .h-languages {
@@ -147,6 +250,10 @@ body {
   margin-left: 18px;
 }
 
+.h-languages__item-active .h-languages__link {
+  opacity: 1;
+}
+
 .h-languages__link {
   font-size: 11px;
   text-transform: uppercase;
@@ -156,6 +263,12 @@ body {
   padding-left: 20px;
   display: block;
   position: relative;
+  opacity: 0.6;
+}
+
+.h-languages__link:hover, .h-languages__link:focus, .h-languages__link:active {
+  color: #fff;
+  text-decoration: none;
 }
 
 .h-languages__icon {
@@ -183,4 +296,8 @@ body {
   color: #fff;
   letter-spacing: 0.150em;
   padding-top: 26px;
+}
+
+.p-aboutSlider2__img {
+  display: block;
 }

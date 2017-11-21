@@ -29,3 +29,39 @@ ol, ul
 
 .hidden
 	display: none
+
+
+/*Стандартные стили*/
+
+.owl-nav
+	div
+		text-indent: -9999px
+		height: 54px
+		width: 28px
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+		display: block
+		z-index: 10
+		&:hover
+			opacity: 0.6
+	.owl-prev
+		left: -100px
+		background-image: url(../img/icon/aw-left.png)
+	.owl-next
+		right: -100px
+		background-image: url(../img/icon/aw-right.png)
+.p-title
+	color: #fff
+	text-transform: uppercase
+	font-family: "ProximaNovaBold", sans-serif
+	font-size: 30px
+	letter-spacing: 0.5em
+	display: inline-block
+
+.p-description
+	p
+		line-height: 25px
+		color: #ccc
+		letter-spacing: 0.05em
