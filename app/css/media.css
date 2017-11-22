@@ -4,6 +4,16 @@
   .page__p-description-ots {
     padding: 0 185px;
   }
+  .p-achievements__time {
+    height: 53px;
+    overflow: hidden;
+  }
+  .p-media__title {
+    font-size: 15px;
+  }
+  .p-media__video iframe {
+    height: 410px;
+  }
   /**/
 }
 

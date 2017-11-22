@@ -33,6 +33,21 @@ ol, ul
 
 /*Стандартные стили*/
 
+a
+	@include transition(all 0.3s ease-in-out)
+
+
+.row-flex
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	-webkit-align-items: center
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+
 .owl-nav
 	div
 		text-indent: -9999px
@@ -44,6 +59,7 @@ ol, ul
 		-webkit-transform: translateY(-50%)
 		display: block
 		z-index: 10
+		@include transition(all 0.3s ease-in-out)
 		&:hover
 			opacity: 0.6
 	.owl-prev
@@ -52,6 +68,8 @@ ol, ul
 	.owl-next
 		right: -100px
 		background-image: url(../img/icon/aw-right.png)
+
+
 .p-title
 	color: #fff
 	text-transform: uppercase
@@ -65,3 +83,22 @@ ol, ul
 		line-height: 25px
 		color: #ccc
 		letter-spacing: 0.05em
+
+.p-button
+	height: 48px
+	width: 270px
+	text-decoration: none
+	border: 2px solid #fff
+	color: #fff
+	text-transform: uppercase
+	font-size: 14px
+	font-family: "ProximaNovaBold", sans-serif
+	display: block
+	margin: 0 auto
+	text-align: center
+	line-height: 48px
+	background-color: transparent
+	&:hover, &:focus, &:active
+		background-color: #fff
+		color: #000
+		text-decoration: none
