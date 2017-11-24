@@ -117,6 +117,12 @@ a {
   text-decoration: none;
 }
 
+.p-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /*Внешние блоки*/
 body {
   font-size: 15px;
@@ -156,6 +162,16 @@ body {
   z-index: 3;
 }
 
+.page__p-photo {
+  padding: 68px 0;
+}
+
+.page__p-photo::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
 .page__p-description {
   position: relative;
   z-index: 3;
@@ -169,6 +185,10 @@ body {
   position: relative;
   z-index: 3;
   padding: 68px 100px;
+}
+
+.page__p-article-btn {
+  padding-top: 68px;
 }
 
 .page__section-top {
@@ -231,7 +251,7 @@ body {
   top: 0;
   z-index: 1;
   background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.6) 0%, black 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(0, 0, 0, 0.6)), color-stop(100%, black));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.6) 0%, black 100%);
   background: -o-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.6) 0%, black 100%);
   background: -ms-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.6) 0%, black 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 );
@@ -248,8 +268,83 @@ body {
   padding-bottom: 55px;
 }
 
+.page__section-art {
+  padding-bottom: 32px;
+  border-bottom: 1px solid #1e1e1e;
+}
+
 .page__section-media {
   padding-bottom: 50px;
+}
+
+.page__section-media-bg {
+  position: relative;
+  z-index: 10;
+}
+
+.page__section-media-bg::after {
+  content: '';
+  height: 140px;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: block;
+  width: auto;
+  position: absolute;
+  background: -webkit-linear-gradient(top, transparent 0%, black 100%);
+  background: linear-gradient(to bottom, transparent 0%, black 100%);
+}
+
+.page__section-media-bg::before {
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: block;
+  position: absolute;
+  z-index: -2;
+}
+
+.page__section-noindex {
+  height: 300px;
+  position: relative;
+}
+
+.page__section-noindex::after {
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+
+.page__section-noindex .page__section-img {
+  position: absolute;
+  top: -60%;
+  left: 0;
+  right: 0;
+}
+
+.page__section-noindex .page__p-title-abs {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  z-index: 2;
+  left: 0;
+  right: 0;
+}
+
+.page__section-noindex .page__p-title {
+  padding-top: 60px;
+  padding-bottom: 0;
 }
 
 .page__p-scroll {
@@ -316,6 +411,22 @@ body {
 
 .footer .header__h-languages {
   padding-top: 53px;
+}
+
+.page__wrapper-black {
+  position: relative;
+}
+
+.page__wrapper-black::after {
+  content: '';
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 140px;
+  background-color: #000;
+  z-index: -1;
+  display: block;
+  position: absolute;
 }
 
 /*Компоненты*/
@@ -546,4 +657,42 @@ body {
   letter-spacing: 0.05em;
   font-family: "ProximaNovaBold", sans-serif;
   text-transform: uppercase;
+}
+
+.p-article::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.p-article__button {
+  color: #fff;
+  text-decoration: none;
+  font-family: "ProximaNovaBold", sans-serif;
+  font-size: 14px;
+  line-height: 34px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.p-article__button:hover, .p-article__button:focus, .p-article__button:active {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.p-article__left {
+  padding-left: 39px;
+  background-image: url(../img/icon/aw-left.png);
+  background-position: left center;
+  float: left;
+}
+
+.p-article__right {
+  padding-right: 39px;
+  background-image: url(../img/icon/aw-right.png);
+  background-position: right center;
+  float: right;
 }

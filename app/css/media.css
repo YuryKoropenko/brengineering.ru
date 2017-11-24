@@ -14,6 +14,9 @@
   .p-media__video iframe {
     height: 410px;
   }
+  .page__section-noindex .page__section-img {
+    top: -30% !important;
+  }
   /**/
 }
 
@@ -66,11 +69,235 @@
   .owl-nav .owl-next {
     right: -50px;
   }
+  .page__section-about {
+    padding-top: 50px;
+  }
+  .page__p-auto {
+    padding: 20px 0;
+  }
+  .p-media__video iframe {
+    height: 312px;
+  }
+  .footer {
+    padding-bottom: 0;
+  }
+  .footer .header__h-nav {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+  .footer .header__h-languages {
+    padding-top: 32px;
+  }
+  .page__section-media {
+    padding-bottom: 30px;
+  }
+  .page__section-noindex {
+    height: 200px;
+  }
+  .page__section-noindex .page__p-title {
+    padding-top: 40px;
+  }
+  .page__p-photo {
+    padding: 34px 0;
+  }
   /**/
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .page__section-noindex .page__p-title-abs {
+    transform: none;
+    -webkit-transform: none;
+  }
+  .h-logo__img {
+    width: auto;
+    max-width: 100%;
+  }
+  .h-logo {
+    display: inline-block;
+  }
+  .header__h-logo {
+    text-align: center;
+  }
+  .h-nav {
+    display: block;
+  }
+  .h-nav__item {
+    text-align: center;
+  }
+  .header__h-nav {
+    padding: 15px 0;
+  }
+  .h-languages__item {
+    width: auto;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 0;
+  }
+  .h-languages .h-languages__item:first-child {
+    margin-left: 0;
+  }
+  .header__h-languages {
+    text-align: center;
+    padding-top: 0;
+  }
+  .h-languages {
+    display: inline-block;
+  }
+  .p-baner__img {
+    display: none;
+  }
+  .p-baner__title {
+    font-size: 18px;
+  }
+  .page__section-top {
+    height: 270px;
+  }
+  .page__section-img {
+    height: 100%;
+    width: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+  }
+  .page__p-title {
+    padding: 15px 0;
+  }
+  .p-title {
+    font-size: 20px;
+  }
+  .p-description p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .page__p-description-ots {
+    padding: 0 15px;
+  }
+  .page__section-full {
+    padding: 15px 0;
+  }
+  .page__p-aboutSlider {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .page__p-auto {
+    padding: 15px 0;
+  }
+  .page__p-scroll {
+    padding-bottom: 15px;
+  }
+  .p-auto__item {
+    font-size: 12px;
+  }
+  .p-auto__title {
+    font-size: 16px;
+  }
+  .p-auto__item {
+    padding-bottom: 5px;
+    line-height: 20px;
+  }
+  .row-flex {
+    display: block;
+  }
+  .p-auto__list {
+    padding-top: 10px;
+  }
+  .page__p-auto-photo {
+    padding: 0;
+  }
+  .page__section-car {
+    padding-bottom: 15px;
+  }
+  .page__p-achievements {
+    padding-bottom: 15px;
+  }
+  .p-achievements__title {
+    font-size: 20px;
+  }
+  .p-achievements__time {
+    font-size: 16px;
+  }
+  .p-achievements__place {
+    font-size: 16px;
+  }
+  .p-achievements__time {
+    height: auto;
+  }
+  .p-achievements {
+    padding: 15px;
+  }
+  .page__p-achievements-wrapper {
+    padding-top: 15px;
+  }
+  .p-media__title {
+    font-size: 12px;
+  }
+  .p-media__time {
+    font-size: 12px;
+  }
+  .p-media__video iframe {
+    height: 190px;
+  }
+  .page__p-media {
+    padding-bottom: 15px;
+  }
+  .p-button {
+    width: 100%;
+  }
+  .page__p-button-media {
+    padding-bottom: 15px;
+  }
+  .footer .header__h-logo {
+    padding-top: 15px;
+  }
+  .footer .header__h-nav {
+    padding: 15px 0;
+  }
+  .footer .header__h-languages {
+    padding-top: 0;
+    padding-bottom: 15px;
+  }
+  .page__section-media {
+    padding-bottom: 0;
+  }
+  .p-media__video-text {
+    padding-top: 15px;
+  }
+  .page__section {
+    overflow-x: hidden;
+  }
+  .page__p-title-abs {
+    position: static;
+  }
+  .page__section-noindex {
+    height: 270px;
+  }
+  .page__section-noindex .page__p-title-abs {
+    top: auto;
+    bottom: 0;
+  }
+  .page__section-noindex .page__section-img {
+    display: none;
+  }
+  .page__section-noindex .page__p-title {
+    padding-top: 0;
+  }
+  .page__p-photo {
+    padding: 15px 0;
+  }
+  .page__p-article-btn {
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .p-article__button {
+    display: inline-block;
+  }
+  .p-article {
+    width: 100%;
+    text-align: center;
+  }
   /**/
 }
 

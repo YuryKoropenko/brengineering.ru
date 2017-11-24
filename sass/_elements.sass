@@ -172,3 +172,30 @@
 			letter-spacing: 0.05em
 			font-family: "ProximaNovaBold", sans-serif
 			text-transform: uppercase
+
+.p-article
+	@include clearfix
+	&__button
+		color: #fff
+		text-decoration: none
+		font-family: "ProximaNovaBold", sans-serif
+		font-size: 14px
+		line-height: 34px
+		display: inline-block
+		background-repeat: no-repeat
+		background-size: auto 100%
+		text-transform: uppercase
+		letter-spacing: 0.1em
+		&:hover, &:focus, &:active
+			text-decoration: underline
+			color: #fff
+	&__left
+		padding-left: 39px
+		background-image: url(../img/icon/aw-left.png)
+		background-position: left center
+		float: left
+	&__right
+		padding-right: 39px
+		background-image: url(../img/icon/aw-right.png)
+		background-position: right center
+		float: right

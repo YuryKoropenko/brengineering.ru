@@ -21,4 +21,30 @@ $(function() {
 			}
 		}
 	});
+	$('.p-achievements__slider').owlCarousel({
+		loop:true,
+		nav:false,
+		items:1,
+		autoplay:true,
+		autoplayTimeout:5000
+	});
+	$('.p-article__slider').owlCarousel({
+		loop:true,
+		nav:false,
+		items:3,
+		margin:30,
+		autoplay:true,
+		autoplayTimeout:5000,
+		responsive:{
+			0:{
+				items:1
+			},
+			767:{
+				items:2
+			},
+			992:{
+				items:3
+			}
+		}
+	});
 });
