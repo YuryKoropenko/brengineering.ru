@@ -123,6 +123,23 @@ a {
   display: block;
 }
 
+.p-hr {
+  height: 1px;
+  display: block;
+  width: 100%;
+  margin-top: 32px;
+  background-color: #1e1e1e;
+  border: none;
+  margin-bottom: 0;
+}
+
+.p-data {
+  font-size: 16px;
+  color: #999;
+  font-family: "ProximaNovaLight", sans-serif;
+  letter-spacing: 0.2em;
+}
+
 /*Внешние блоки*/
 body {
   font-size: 15px;
@@ -148,16 +165,23 @@ body {
 
 .header__h-nav {
   padding: 34px 70px;
+  position: relative;
 }
 
 .header__h-languages {
   padding-top: 37px;
 }
 
+.page__p-data {
+  margin-bottom: -75px;
+  text-align: center;
+}
+
 .page__p-title {
   text-align: center;
   padding-bottom: 45px;
-  padding-top: 45px;
+  padding-top: 0;
+  margin-top: 0;
   position: relative;
   z-index: 3;
 }
@@ -264,15 +288,6 @@ body {
   padding: 68px 0;
 }
 
-.page__section-car {
-  padding-bottom: 55px;
-}
-
-.page__section-art {
-  padding-bottom: 32px;
-  border-bottom: 1px solid #1e1e1e;
-}
-
 .page__section-media {
   padding-bottom: 50px;
 }
@@ -343,7 +358,7 @@ body {
 }
 
 .page__section-noindex .page__p-title {
-  padding-top: 60px;
+  margin-top: 80px;
   padding-bottom: 0;
 }
 
@@ -665,6 +680,26 @@ body {
   display: table;
 }
 
+.p-article__left {
+  float: left;
+}
+
+.p-article__left-button {
+  padding-left: 39px;
+  background-image: url(../img/icon/aw-left.png);
+  background-position: left center;
+}
+
+.p-article__right {
+  float: right;
+}
+
+.p-article__right-button {
+  padding-right: 39px;
+  background-image: url(../img/icon/aw-right.png);
+  background-position: right center;
+}
+
 .p-article__button {
   color: #fff;
   text-decoration: none;
@@ -681,18 +716,4 @@ body {
 .p-article__button:hover, .p-article__button:focus, .p-article__button:active {
   text-decoration: underline;
   color: #fff;
-}
-
-.p-article__left {
-  padding-left: 39px;
-  background-image: url(../img/icon/aw-left.png);
-  background-position: left center;
-  float: left;
-}
-
-.p-article__right {
-  padding-right: 39px;
-  background-image: url(../img/icon/aw-right.png);
-  background-position: right center;
-  float: right;
 }

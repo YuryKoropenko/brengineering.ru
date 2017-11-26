@@ -175,6 +175,18 @@
 
 .p-article
 	@include clearfix
+	&__left
+		float: left
+		&-button
+			padding-left: 39px
+			background-image: url(../img/icon/aw-left.png)
+			background-position: left center
+	&__right
+		float: right
+		&-button
+			padding-right: 39px
+			background-image: url(../img/icon/aw-right.png)
+			background-position: right center
 	&__button
 		color: #fff
 		text-decoration: none
@@ -189,13 +201,3 @@
 		&:hover, &:focus, &:active
 			text-decoration: underline
 			color: #fff
-	&__left
-		padding-left: 39px
-		background-image: url(../img/icon/aw-left.png)
-		background-position: left center
-		float: left
-	&__right
-		padding-right: 39px
-		background-image: url(../img/icon/aw-right.png)
-		background-position: right center
-		float: right
