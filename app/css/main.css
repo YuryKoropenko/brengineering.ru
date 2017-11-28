@@ -95,6 +95,45 @@ a {
   letter-spacing: 0.05em;
 }
 
+.p-description img {
+  display: block;
+  width: auto;
+  position: relative;
+  width: 160%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  height: auto;
+}
+
+.p-description iframe {
+  width: 160%;
+  position: relative;
+  width: 160%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  height: auto;
+  display: block;
+  height: 470px;
+}
+
+.p-description .page__p-photo {
+  width: 160%;
+  position: relative;
+  width: 160%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  height: auto;
+}
+
+.p-description .page__p-photo img {
+  position: static;
+  transform: none;
+  -webkit-transform: none;
+}
+
 .p-button {
   height: 48px;
   width: 270px;
